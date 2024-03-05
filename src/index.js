@@ -4,12 +4,22 @@ import './App.css';
 import './index.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Residents from './Sidebar_Material/Residents';
+import Visitors from './Sidebar_Material/Visitors';
+import Home from './components /Home';
+import About from './components /About';
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
+  <App />
+    <Routes>
+    <Route path='/' element={<Home />}/>
+    <Route path='/about' element={<About />}/>
+      <Route path='/residents' element={<Residents />}/>
+      <Route path='/visitor' element={<Visitors />}/>
+    </Routes>
   </BrowserRouter>
 );
 

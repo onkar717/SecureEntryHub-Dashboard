@@ -1,12 +1,12 @@
-import './App.css';
-import DashboardPage from './components /Dashboard';
+import React from 'react'
+import Header from './components /Header'
 
 function App() {
   return (
-    <div className="">
-     <DashboardPage />
+    <div>
+      <Header />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
