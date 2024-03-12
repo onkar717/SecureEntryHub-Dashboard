@@ -166,7 +166,7 @@ const Header = () => {
             </h2>
           </Link>
           <Link
-            to="/visitor"
+            to="/acoounts"
             className={`group flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}
           >
             <div><FiShoppingCart size={20} /></div>

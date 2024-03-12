@@ -4,6 +4,7 @@ import Header from './components /Header';
 import Home from './components /Home';
 import About from './components /About';
 import Visitors from './Sidebar_Material/Visitors';
+import Account from './Sidebar_Material/Accounts';
 
 // import Messages from './components/Messages';
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/visitor" element={<Visitors />} />
+            <Route path='/acoounts' element={<Account />} />
           </Routes>
         </div>
       </div>
